@@ -16,124 +16,124 @@ void astrologySignCalculator(int day, string month)
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Feb") {
+  if(day < 20)
   {
-    cout << "Capricorn" << endl;
+    cout << "Aquarius" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Pisces" << endl;
   }
   }
 
-  else if(month == "Jan") {
+  else if(month == "Mar") {
   if(day < 21)
   {
-    cout << "Capricorn" << endl;
+    cout << "Pisces" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Aries" << endl;
   }
   }
 
-  else if(month == "Jan") {
+  else if(month == "Apr") {
   if(day < 21)
   {
-    cout << "Capricorn" << endl;
+    cout << "Aries" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Taurus" << endl;
   }
   }
 
-  else if(month == "Jan") {
+  else if(month == "May") {
   if(day < 21)
   {
-    cout << "Capricorn" << endl;
+    cout << "Taurus" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Gemini" << endl;
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Jun") {
+  if(day < 22)
   {
-    cout << "Capricorn" << endl;
+    cout << "Gemini" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Cancer" << endl;
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Jul") {
+  if(day < 23)
   {
-    cout << "Capricorn" << endl;
+    cout << "Cancer" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Leo" << endl;
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Aug") {
+  if(day < 23)
   {
-    cout << "Capricorn" << endl;
+    cout << "Leo" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Virgo" << endl;
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Sep") {
+  if(day < 22)
   {
-    cout << "Capricorn" << endl;
+    cout << "Virgo" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Libra" << endl;
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Oct") {
+  if(day < 23)
   {
-    cout << "Capricorn" << endl;
+    cout << "Libra" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Scorpio" << endl;
   }
   }
 
-  else if(month == "Jan") {
-  if(day < 21)
+  else if(month == "Nov") {
+  if(day < 23)
   {
-    cout << "Capricorn" << endl;
+    cout << "Scorpio" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Sagittarius" << endl;
   }
   }
 
-  else (month == "Jan") {
-  if(day < 21)
+  else { // may not need anything here
+  if(day < 22)
   {
-    cout << "Capricorn" << endl;
+    cout << "Saggitarius" << endl;
   }
     else
   {
-    cout << "Aquarius" << endl;
+    cout << "Capricorn" << endl;
   }
   }
 
@@ -148,9 +148,9 @@ int main() {
   for(int i = 0; i < t; i ++)
   {
    string date;
-    cin  >> date;
+    cin >> date;
 
-    astrologySignCalculator(date); // day and month which are two variables unlike those in the void
+    astrologySignCalculator(day, month); // day and month which are two variables unlike those in the void
       
   }
 }
