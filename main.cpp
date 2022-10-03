@@ -3,7 +3,7 @@
 using namespace std;
 
 
-void astrologySignCalculator(int day, string month)
+void astrologySignCalculator (int day, string month)
 {
   if(month == "Jan") {
   if(day < 21)
@@ -126,7 +126,7 @@ void astrologySignCalculator(int day, string month)
   }
   }
 
-  else { // may not need anything here
+  else if (month == "Dec") {
   if(day < 22)
   {
     cout << "Saggitarius" << endl;
@@ -141,16 +141,17 @@ void astrologySignCalculator(int day, string month)
 }
 
 int main() {
-
   int t;
     cin >> t;
-
+    string month;
+    int day;
   for(int i = 0; i < t; i ++)
   {
-   string date;
-    cin >> date;
+    cin >> day;
+    cin >> month;
+      
 
-    astrologySignCalculator(day, month); // day and month which are two variables unlike those in the void
+  astrologySignCalculator(day, month); // day and month which are two variables unlike those in the void
       
   }
 }
